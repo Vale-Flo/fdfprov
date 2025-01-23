@@ -1,0 +1,6 @@
+test:
+	echo "aaa"
+	cc -Wall -Wextra -Werror -I./includes -I./libs/libft src/utils.c src/main.c -L./libs/libft -lft
+
+all:
+	cc -Wall -Wextra -Werror -I./includes -I./libs/libft test_parsemap/utils.c test_parsemap/main.c -L./libs/libft -lft
